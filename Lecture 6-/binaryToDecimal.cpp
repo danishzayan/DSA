@@ -16,7 +16,7 @@ int main() {
         if(digit == 1) {
         ans = ans + pow(2, i);
         }
-
+1
         binaryNumber = binaryNumber / 10;
         i++;
     }
