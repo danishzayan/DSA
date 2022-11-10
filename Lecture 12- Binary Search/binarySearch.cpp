@@ -5,7 +5,7 @@ int binarySearch(int arr[], int size, int key) {
   int start = 0;
   int end = size - 1;
 
-  int mid = (start + end)/2;
+  int mid = start + (end - start)/2;
 
   while(start <= end) {
 
@@ -21,7 +21,7 @@ int binarySearch(int arr[], int size, int key) {
       end = mid - 1;
     }
 
-    mid = (start + end)/2;
+    mid = start + (end - start)/2;
   }
   return -1;
 }
@@ -34,8 +34,8 @@ int main() {
   int evenIndex = binarySearch(even, 3, 6);
   cout << "index of 6 is: " << evenIndex <<endl;
 
-  int addIndex = binarySearch(add, 5, 9);
-  cout << "index of 9 is: " << addIndex <<endl;
+  int addIndex = binarySearch(add, 5, 13);
+  cout << "index of 13 is: " << addIndex <<endl;
 
   return 0; 
 }
