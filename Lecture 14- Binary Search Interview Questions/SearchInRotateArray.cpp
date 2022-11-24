@@ -13,7 +13,7 @@ int getPivot(vector<int>& arr, int n) {
       e = mid;
     }
     mid = s + (e - s)/2;
-  }
+  }  
   return s;
 }
 
